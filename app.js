@@ -41,6 +41,15 @@ var app = new Vue({
         },
         copy: function () {
             copyText(this.historyString);
+        },
+        copyAndDelete: function () {
+            copyText(this.historyString);
+            this.current = '';
+            this.history = [];
+            this.historyString = '';
+            localStorage.history = JSON.stringify(this.history);
+            localStorage.current = this.current;
+            localStorage.historyString = this.historyString;
         }
     },
     mounted() {
