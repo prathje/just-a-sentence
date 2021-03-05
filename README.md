@@ -1,3 +1,3 @@
 ## Demo
 
-[Website](https://just-a-sentence.com/)
+[Website](https://prathje.github.io/just-a-sentence/)
